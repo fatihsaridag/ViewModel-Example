@@ -1,0 +1,14 @@
+﻿@using ViewModelApp.Models.ViewModels;
+@model PersonelCreateVM
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<form asp-controller="Home" asp-action="Index" method="post">
+    <input type="text" asp-for ="Adi"value="Adı" />
+    <input type="text" asp-for="Soyadi" value="Soyadı" />
+    <button type="submit" class="btn btn-primary">Gönder</button>
+</form>
